@@ -1,3 +1,3 @@
 hours = 2
-seconds = 3600 * int(hours)
-print (hours, "hour(s) is ", seconds, "seconds.")
+seconds = 3600 * hours
+print (int(hours), "hour(s) is ", seconds, "seconds.")
