@@ -4,5 +4,5 @@ counter  = 0
 
 #for i in range(pattern_size):
 while counter < pattern_size:
-    print(unit * pattern_size)
+    print(unit * pattern_size, end="")
     counter += 1
