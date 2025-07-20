@@ -3,5 +3,5 @@ counter  = 0
 
 #for i in range(pattern_size):
 while counter < pattern_size:
-    print(("*") * pattern_size, end = "\n")
+    print(pattern_size * "*", end = "\n")
     counter += 1
