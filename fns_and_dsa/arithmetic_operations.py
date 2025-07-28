@@ -7,7 +7,7 @@ def perform_operation(num1, num2, operation):
         num1 * num2
     elif operation == "add":
         num1 / num2
-    elif num2 == 0 :
+    elif num2 == 0:
         print("Cannot divide by zero")
     else:
         print("These values are not valid")
