@@ -3,7 +3,8 @@ class BankAccount:
         self.account_balance = 0
 
         def deposit(amount):
-           BankAccount.account_balance += amount
+          return f"Current Balance : {BankAccount.account_balance + amount}"
+         
 
         def withdraw(amount):
             if BankAccount.account_balance > amount:
