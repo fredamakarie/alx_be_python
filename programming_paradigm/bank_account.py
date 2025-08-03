@@ -3,12 +3,12 @@ class BankAccount:
         self.account_balance = 0
 
         def deposit(amount):
-          return f"Current Balance: {BankAccount.account_balance + amount}"
+          return f"Current Balance: {account_balance + amount}"
          
 
         def withdraw(amount):
-            if BankAccount.account_balance > amount:
-                BankAccount.account_balance - amount
+            if account_balance > amount:
+                account_balance - amount
             else:
                 return "Insufficient funds."
 
