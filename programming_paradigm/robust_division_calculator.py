@@ -5,8 +5,8 @@ def safe_divide(numerator, denominator):
 
         if denominator == 0:
             raise ZeroDivisionError ("Error: Cannot divide by zero.")
-    
-        result = numerator/denominator
+        else:
+            result = numerator/denominator
         return  f"The result of the division is {result}"
     
     except ValueError:
