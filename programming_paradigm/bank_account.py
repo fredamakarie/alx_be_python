@@ -13,5 +13,5 @@ class BankAccount:
         elif self.account_balance < amount:
             return "Insufficient funds."
 
-    def display(self):
+    def display_balance(self):
         return f"Current Balance: ${self.account_balance}"
