@@ -4,7 +4,7 @@ class Book:
         self.author = author
         self.year = year
 
-    def __del__(self, title):
+    def __del__(self):
         del Book.title
         print(f"Deleting {self.title}")
 
@@ -13,3 +13,4 @@ class Book:
 
     def __repr__(self):
         print(f"Deleting {self.title}")
+
