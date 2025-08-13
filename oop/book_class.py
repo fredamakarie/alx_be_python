@@ -13,4 +13,3 @@ class Book:
 
     def __repr__(self):
         print(f"Deleting {self.title}")
-
