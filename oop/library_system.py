@@ -31,11 +31,6 @@ class Library:
     
     def list_books(self):
         """Return a list of all books in string form."""
-        if not self.books:
-            return ["Library is empty."]
         return [str(book) for book in self.books]
 
-    def __str__(self):
-        if not self.books:
-            return "Library is empty."
-        return "\n".join(str(book) for book in self.books)
+   
