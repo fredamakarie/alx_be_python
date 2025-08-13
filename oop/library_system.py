@@ -23,7 +23,7 @@ class Library:
     def __init__(self):
         self.books = []
 
-    def list_book(self, book):
+    def list_books(self, book):
         if isinstance(book, Book):
             self.books.append(book)
         else:
