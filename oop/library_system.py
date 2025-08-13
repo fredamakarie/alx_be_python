@@ -30,8 +30,9 @@ class Library:
             raise TypeError("Only Book or subclasses of Book can be added")
     
     def list_books(self):
-        """Return a list of all books in string form."""
-        return [str(book) for book in self.books]
+        for book in self.books:
+            print(book)
 
 
    
+
