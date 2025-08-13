@@ -20,9 +20,16 @@ class PrintBook(Book):
         print(f"{self.title} by {self.author}, Page Count: {self.page_count}")
 
 class Library:
-    def __init__(self, books, title, author, file_size, page_count):
-        self.books = books
-        self.obj_book = Book(title, author)
-        self.obj_ebook = EBook(file_size)
-        self.obj_printbook = PrintBook(page_count)
+    def __init__(self):
+        self.books = []
+
+    def list_book(self, book):
+        if isinstance(book, Book):
+            self.books.append(book)
+        else:
+            raise TypeError("Only Book or subclasses of Book can be added")
     
+    def __str__(self):
+        if not self.books:
+            return "Library is empty."
+        return "\n".join(str(book) for book in self.books)
